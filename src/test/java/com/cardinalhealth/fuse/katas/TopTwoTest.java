@@ -1,4 +1,4 @@
-package com.fuse;
+package com.cardinalhealth.fuse.katas;
 
 import org.junit.Test;
 

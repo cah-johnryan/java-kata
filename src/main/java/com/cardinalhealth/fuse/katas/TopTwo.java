@@ -7,7 +7,7 @@ public class TopTwo {
     public List<Integer> findTopTwo(List<Integer> integerList) {
         return null;
     }
-
-
-
+    public List<String> findTopTwoDates(List<String> dateList) {
+        return null;
+    }
 }

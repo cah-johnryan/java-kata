@@ -1,10 +1,17 @@
 package com.cardinalhealth.fuse.katas;
 
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FibonacciTest {
+    Fibonacci subject;
+
+    @BeforeEach
+    void setUp() {
+        subject = new Fibonacci();
+    }
 
     // 10 -> 55
     // 20 -> 6765
@@ -13,33 +20,16 @@ public class FibonacciTest {
     // 50 -> 12586269025
     @Test
     public void testFibZeroIsZero() {
-        Fibonacci fibonacci = new Fibonacci();
-
-        int result = fibonacci.compute(0);
-
-        assertEquals(0, result);
-
+        assertEquals(0, subject.compute(0));
     }
 
     @Test
     public void testFibOneIsOne() {
-        Fibonacci fibonacci = new Fibonacci();
-
-        int result = fibonacci.compute(1);
-
-        assertEquals(1, result);
-
+        assertEquals(1, subject.compute(1));
     }
 
     @Test
     public void testFibTenIs55() {
-        Fibonacci fibonacci = new Fibonacci();
-
-        int result = fibonacci.compute(10);
-
-        assertEquals(55, result);
-
+        assertEquals(55, subject.compute(10));
     }
-
-
 }

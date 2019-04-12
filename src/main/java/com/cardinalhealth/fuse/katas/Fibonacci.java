@@ -1,4 +1,4 @@
-package com.fuse;
+package com.cardinalhealth.fuse.katas;
 
 public class Fibonacci {
 
